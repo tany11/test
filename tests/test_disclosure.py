@@ -2,18 +2,20 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import pytest
 from selenium.webdriver.chrome.service import Service
+import os
 
 class TestDisclosure():
     def test_disclosure1(self, driver, testdata):
 
-        driver.get("https://www.ismartbe-ta.cic.co.jp/cic_online/top")
+        url = os.environ["URL"]+"/top"
+        driver.get(url)
         driver.find_element(By.CSS_SELECTOR, ".c-check-box").click()
         driver.find_element(By.ID, "netEntryNo").send_keys(testdata["entryNo"])
         driver.find_element(By.ID, "tel").send_keys(testdata["tel"])
         driver.save_screenshot_with_case()
         driver.find_element(By.ID, "next").click()
 
-        assert driver.current_url == "https://www.ismartbe-ta.cic.co.jp/cic_online/top/disclosure"
+        assert driver.current_url == url + "/disclosure"
 
         driver.save_screenshot_with_case()
 

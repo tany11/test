@@ -1,0 +1,8 @@
+json/
+log/
+screenshot/
+tests/_pytest_cache/
+tests/__pycache__/
+
+
+.env
