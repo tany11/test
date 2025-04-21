@@ -1,0 +1,22 @@
+[
+    {"testcase": "TestDisclosure",
+        "detail":{
+        "entryNo": "045206",
+        "tel": "0377777001",
+        "lastKana": "タナカ",
+        "firstKana": "タロウ",
+        "birthDateEra": "令和",
+        "birthDateYear": "01",
+        "birthDateMonth": "01",
+        "birthDateDay": "01",
+        "creditguidance": 0,
+        "mailAddress": "test@mail",
+        "creditCardNo1": "1234",
+        "creditCardNo2": "5678",
+        "creditCardNo3": "9012",
+        "creditCardNo4": "3456",
+        "userFullName": "田中太郎",
+        "securityCode": "123"
+        }
+    }
+]
